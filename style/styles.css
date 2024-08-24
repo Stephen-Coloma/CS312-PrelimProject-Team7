@@ -1,12 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+  --main-bg-color: #fff;
+  --main-foreground-color: #fd9d24;
+  --card-bg-color: #fef3e5;
+  --main-accent-color: #009ddb;
+  --main-text-color: #000;
+  /* font family to be chankged */
+  --app-font-family: 'Arial, sans-serif'; 
+  --app-font-size: 16px;
 }
 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: var(--app-font-family);
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    min-width: 90%;
+    max-width: 90%;
+    border: blue 3px solid;
+    align-self: center;
 }
 
 /* Navigation Bar */
@@ -44,7 +65,9 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Home Page Styles */
+
+
+/* SECTION: HOME PAGE, ASSIGNED TO: HARVEY */
 .home-page {
     display: flex;
     align-items: center;
@@ -134,85 +157,18 @@ nav ul li a {
     height: auto; 
 }
 
-.sdg-section {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.sdg-section h1 {
-    font-size: 28px;
-    color: #007BFF;
-}
 
 
-/* Containers for articles */
-.container {
+/* SECTION: GLOBAL STATISTICS, ASSIGNED TO: LEONGHARD */
+.global-statistics{
+    /* can be changed */
+    height: 100vh;
+    width: 100%;
+    border: 2px solid red;
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 
-.box {
-    flex: 1;
-    padding: 20px;
-    background-color: #f4f4f4;
-    margin: 0 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: relative;
-    border: 2px solid transparent; 
-}
 
-.box.left {
-    background-color: #e8f0fe;
-    border-color: orange; 
-}
-
-.box.middle {
-    background-color: #fff7e6;
-    border-color: orange; 
-}
-
-.box.right {
-    background-color: #e6ffee;
-    border-color: orange; 
-}
-
-.box-content {
-    text-align: left;
-}
-
-.box-content img {
-    display: block;
-    width: 60px;
-    margin-bottom: 10px;
-}
-
-.box-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.box-content hr {
-    width: 70%; 
-    border: 1px solid orange; 
-    margin: 10px 0;
-}
-
-.box-content p {
-    font-size: 16px;
-    margin-bottom: 40px; 
-}
-
-.read-more {
-    position: absolute;
-    bottom: 10px;
-    right: 15px;
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.read-more:hover {
-    text-decoration: underline;
-}
