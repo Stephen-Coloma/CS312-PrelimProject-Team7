@@ -1,12 +1,18 @@
+/* VARAIABLES USED IN THE POROJECT */
+
 :root{
   --main-bg-color: #fff;
   --main-foreground-color: #fd9d24;
   --card-bg-color: #fef3e5;
   --main-accent-color: #009ddb;
   --main-text-color: #000;
-  /* font family to be chankged */
+  
+  /* font family to be changed */
   --app-font-family: 'Arial, sans-serif'; 
-  --app-font-size: 16px;
+  --app-font-size: clamp(14px, 1vw + 1rem, 18px);
+  /* mobile view breakpoint */
+  --mobile-breakpoint: 420px;
+  --tab-breakpoint: 768px;
 }
 
 
@@ -19,6 +25,7 @@
 
 body {
     font-family: var(--app-font-family);
+    font-size: var(--app-font-size);
     display: flex;
     flex-direction: column;
 }
@@ -30,7 +37,7 @@ main{
     align-self: center;
 }
 
-/* Navigation Bar */
+Navigation Bar
 nav {
     padding: 10px 20px;
     display: flex;
@@ -155,7 +162,7 @@ nav ul li a {
 .right-picture img {
     width: 100%;
     height: auto; 
-}
+} 
 
 
 
@@ -168,7 +175,87 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 2rem;
 }
 
 
+
+/* SECTION: INTRODUCTION, ASSIGNED TO: STEPHEN */
+/* right content */
+.introduction{
+    width: 100%;
+    border: solid yellow 5px;
+    padding: 2% 0%;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;   
+    align-items: center;
+}
+
+.introduction .image-container{
+    border: green solid 5px;
+    width: 70%;
+    height: fit-content;
+    position: relative;
+}
+
+.image-container #img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.image-container .logo-container{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .5rem;
+    background-color: var(--main-bg-color);
+}
+
+.logo-container #logo{
+    width: 100%;
+}
+
+/* left content */
+.introduction .content-container{
+    border: blue solid 5px;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.content-container #sub-text{
+    font-style: italic;
+    font-size: 1rem;
+    font-family: var(--app-font-family)
+}
+
+.content-container #title-text{
+    font-size: 2rem;;
+    font-weight: bolder;
+    font-family: var(--app-font-family);
+    line-height: 3rem;
+    color: var(--main-accent-color);
+}
+
+.content-container #discussion{
+    font-family: var(--app-font-family);
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+@media(min-width: 768px){
+    .introduction{
+        flex-direction: row;
+    }
+
+    .introduction .image-container{
+        width: 40%;
+    }
+
+    .introduction .content-container{
+        width: 40%;
+        padding: 2rem;
+    }
+}
