@@ -37,7 +37,7 @@ main{
     align-self: center;
 }
 
-Navigation Bar
+/* Navigation Bar */
 nav {
     padding: 10px 20px;
     display: flex;
@@ -184,7 +184,7 @@ nav ul li a {
 /* right content */
 .introduction{
     width: 100%;
-    border: solid yellow 5px;
+    /* border: solid yellow 5px; */
     padding: 2% 0%;
     display: flex;
     justify-content: center; 
@@ -193,7 +193,7 @@ nav ul li a {
 }
 
 .introduction .image-container{
-    border: green solid 5px;
+    /* border: green solid 5px; */
     width: 70%;
     height: fit-content;
     position: relative;
@@ -219,7 +219,7 @@ nav ul li a {
 
 /* left content */
 .introduction .content-container{
-    border: blue solid 5px;
+    /* border: blue solid 5px; */
     width: 100%;
     height: fit-content;
     padding: 1rem;
@@ -235,7 +235,7 @@ nav ul li a {
     font-size: 2rem;;
     font-weight: bolder;
     font-family: var(--app-font-family);
-    line-height: 3rem;
+    line-height: 2rem;
     color: var(--main-accent-color);
 }
 
@@ -257,5 +257,109 @@ nav ul li a {
     .introduction .content-container{
         width: 40%;
         padding: 2rem;
+    }
+}
+
+/* SECTION: UNDERSTANDING SIGNIFICANCE, ASSIGNED TO: STEPHEN */
+.understanding-significance{
+    width: 100%;
+    padding: 2% 0%;
+}
+
+.understanding-significance .title-container{
+    /* border: solid green 5px; */
+    display: flex;
+    justify-content: center;
+}
+
+.title-container #title{
+    font-size: 2rem;;
+    font-weight: bolder;
+    text-align: center;
+    font-family: var(--app-font-family);
+    color: var(--main-accent-color);
+}
+
+.understanding-significance .card-container{
+    /* border: solid blue 5px; */
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card-container .card{
+    border: 0.15rem var(--main-foreground-color), solid;
+    border-radius: 1rem;
+    padding: 7% 2% 10% 2%;
+    max-width:17rem;
+    position: relative;
+}
+
+.card .card-logos{
+    width: 4rem;
+    height: 4rem;
+}
+
+.card .title{
+    font-size: 1.8rem;
+    font-family: var(--app-font-family);
+}
+
+.card .line{
+    border: 0.1rem solid var(--main-foreground-color);
+    margin-top: .5rem;
+}
+.card .box{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 42%;
+    height: 58%;
+    width: 100%;
+    left: 0;
+    border-radius: 0 0 .8rem .8rem;
+    background-color: var(--main-foreground-color);
+    transition: opacity .5s ease-in-out, visibility 0s;
+    z-index: -1;
+}
+
+.card .description{
+    font-family: var(--app-font-family);
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: .5rem;
+}
+
+.card a {
+    position: absolute;
+    text-decoration: underline;
+    top: 2rem;
+    right: 2rem;
+    color: var(--main-foreground-color);
+}
+
+.card:hover .box{
+    opacity: 1;
+    visibility: visible;
+    color: var(--main-bg-color);
+}
+
+.card:hover a {
+    color: var(--main-bg-color);
+}
+
+@media(min-width: 768px){
+    .card a {
+        top: auto;
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .card .box{
+        top: 48%;
+        height: 52%;
     }
 }
