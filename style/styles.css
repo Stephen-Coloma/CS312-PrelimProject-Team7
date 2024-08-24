@@ -30,139 +30,144 @@ body {
     flex-direction: column;
 }
 
+/* header part */
+header {
+    background-color: var(--main-foreground-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.upper-box{
+    height: 2rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 8rem;
+    background-color: var(--main-bg-color);
+    border-bottom: 4px solid var(--main-foreground-color);
+
+}
+
+#header-logo {
+    height: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* main part */
 main{
-    min-width: 90%;
-    max-width: 90%;
+    width: 90%;
     border: blue 3px solid;
     align-self: center;
 }
 
-/* Navigation Bar */
-nav {
-    padding: 10px 20px;
+
+
+.hero {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    border-bottom: 4px solid orange; 
-    background-color: lightblue;
-}
-
-.logo img {
-    height: 40px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    margin-left: auto;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: black; 
-    text-decoration: none;
-    font-size: 18px;
-}
-
-
-
-/* SECTION: HOME PAGE, ASSIGNED TO: HARVEY */
-.home-page {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh; 
-    padding: 80px 20px 20px; 
+    padding: 1rem 5rem;
+    background-color: var(--main-bg-color);
 }
 
-.home-content {
+.content-wrapper {
+    /* border: red solid 5px; */
     display: flex;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.left-content {
-    flex: 1;
-    padding: 20px;
+.text-content {
+    /* border: blue solid 5px; */
+    width: 50%;
+    padding: 1rem;
 }
 
-.number-phrase {
+.goal{
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
-.number {
-    font-size: 240px; 
+.goal h1 {
+    font-size: 13rem;
+    color: var(--main-foreground-color);
     font-weight: bold;
-    margin-right: 20px; 
-    color: orange; 
+    /* border: brown solid 5px; */
 }
 
-.phrase {
+.main-title{
+    /* border:  red solid 5px; */
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: end;
+    align-items: end;
 }
 
-.phrase h2 {
-    font-size: 32px;
-    font-weight: normal;
-    margin: 0; 
-    color: #09b4f5; 
+.main-title #sdg-logo {
+    height: 3rem;
 }
 
-.phrase-description {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    position: relative; 
-}
-
-.bold-text {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.sample-text-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.sample-text {
-    font-size: 16px;
-    margin-bottom: 5px; 
-}
-
-.learn-more {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
-    position: absolute; 
-    right: 250px; 
-    bottom: -30px; 
-}
-
-.learn-more:hover {
-    text-decoration: underline;
-}
-
-.right-picture {
-    flex: 0 0 40%; 
+.main-title h2 {
+    font-size: 2.5rem;
+    color: var(--main-accent-color);
     text-align: right;
 }
 
-.right-picture img {
+.main-text{
+    /* border:  violet solid 5px; */
+    position: relative;
+}
+
+.main-text .subheading {
+    font-size: var(--app-font-size);
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.main-text .description {
+    font-size: var(--app-font-size);
+    line-height: 2rem;
+}
+
+
+.learn-more-btn {
+    background-color: var(--main-foreground-color);
+    color: var(--main-bg-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+
+.image-content{
+    padding: 2rem;
+    width: 50%;
+}
+.image-content img {
+    /* border: green solid 5px; */
     width: 100%;
-    height: auto; 
-} 
+}
+
+
 
 
 
