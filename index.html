@@ -3,79 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Team 7</title>
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <header>
+        <div class="upper-box"></div>
+        <div class="header-content">
+            <img id="header-logo" src="resources/images/logo.png" alt="Sustainable Cities Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Nav 1</a></li>
+                    <li><a href="#">Nav 2</a></li>
+                    <li><a href="#">Nav 3</a></li>
+                    <li><a href="#">Nav 4</a></li>
+                    <li><a href="#">Nav 5</a></li>
+                    <li><a href="#">Nav 6</a></li>
+                </ul>
+            </nav>
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">nav2</a></li>
-            <li><a href="#">nav3</a></li>
-            <li><a href="#">nav4</a></li>
-        </ul>
-    </nav>
+    </header>
 
-    <section class="home-page">
-        <div class="home-content">
-            <div class="left-content">
-                <div class="number-phrase">
-                    <div class="number">11</div>
-                    <div class="phrase">
-                        <h2>Sustainable Cities <br> and Communities</h2>
+    <main>
+        <!-- SECTION: HOME PAGE, ASSIGNED TO: HARVEY AND HANNAH -->
+        <section class="hero">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <div class="goal">
+                        <h1>11</h1>
+                        <div class="main-title">
+                            <img id="sdg-logo" src="resources/images/sdg-logo.png" alt="UN Goal Logo">
+                            <h2>Sustainable Cities and Communities</h2>
+                        </div>
+                    </div>
+
+                    <div class="main-text">
+                        <p class="subheading">Building Sustainable Cities</p>
+                        <p class="description">Join us in transforming cities into spaces that are inclusive, safe, resilient, and sustainable.</p>
+                        <a href="#">
+                            <button class="learn-more-btn">Learn More</button>
+                        </a>
                     </div>
                 </div>
-                <div class="phrase-description">
-                    <div class="bold-text">Building Sustainable Cities</div>
-                    <div class="sample-text">This is a sample sentence that describes the importance of building sustainable cities.</div>
-                    <div class="learn-more-container">
-                        <a href="#" class="learn-more">Learn More</a>
-                    </div>
+                <div class="image-content">
+                    <img src="resources/images/construction.png" alt="Construction Scene">
                 </div>
             </div>
-            <div class="right-picture">
-                <img src="style/sample.png" alt="Big Picture">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="sdg-section">
-        <h1>Understanding the Significance of SDG 11</h1>
-    </section>
-
-    <section class="container">
-        <div class="box left">
-            <div class="box-content">
-                <img src="style/sample.png" alt="Logo 1">
-                <h2>Inclusive</h2>
-                <hr>
-                <p>Promotes equal access for everyone. <br> No one is left behind.</p>
-                <a href="#" class="read-more">Read More</a>
+        <!-- SECTION: GLOBAL STATISTICS, ASSIGNED TO: LEONGHARD -->
+        <section class="global-statistics">
+            <h1>THIS SECTION IS ASSIGNED TO LEONHARD
+            </h1>
+        </section>
+    
+        <!-- SECTION: INTRODUCTION, ASSIGNED TO: STEPHEN -->
+        <section class="introduction">
+            <div class="image-container">
+                <img id="img" src="resources/images/introduction-img.svg" alt="introduction image">
+                <div class="logo-container">
+                    <img id="logo" src="resources/images/sdg-11-logo.svg" alt="sdg 11 logo">
+                </div>
             </div>
-        </div>
 
-        <div class="box middle">
-            <div class="box-content">
-                <img src="style/sample.png" alt="Logo 2">
-                <h2>Safe</h2>
-                <hr>
-                <p>Everybody has the right to safety and security.</p>
-                <a href="#" class="read-more">Read More</a>
+            <div class="content-container">
+                <h3 id="sub-text">Urban Resilience for a Sustainable Future</h3>
+                <h1 id="title-text">The Sustainable <br> Development Goal 11</h1>
+                <p id="discussion"><br>SDG 11, or Sustainable Development Goal 11, is one of 17 goals set by the United Nations to achieve a more sustainable world by 2030. To accommodate the rapid growth of our population, SDG 11  attempts to make cities and human settlements more inclusive, safe, resilient, and sustainable.It prioritizes assuring access to affordable housing, improving public transportation, safeguarding cultural and natural heritage and  increasing access to green public spaces. It highlights the need to create urban environments that promote economic, social, and environmental well-being for all citizens, especially the most vulnerable regions.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="box right">
-            <div class="box-content">
-                <img src="style/sample.png" alt="Logo 3">
-                <h2>Sustainable</h2>
-                <hr>
-                <p>Long-term support for humanity</p>
-                <a href="#" class="read-more">Read More</a>
+        <section class="understanding-significance">
+            <div class="title-container">
+                <h1 id="title">Understanding the Significance of SDG 11</h1>
             </div>
-        </div>
-    </section>
+
+            <div class="card-container">
+                <div class="card">
+                    <img class="card-logos" src="resources/images/card-1-logo.svg" alt="">
+                    <h1 class="title">Inclusive</h1>
+                    <div class="line"></div>
+                    <div class="box"></div>
+                    <h4 class="description">Promotes equal access for everyone. No one is left behind.</h4>
+                    <a href="#">Read More</a>   
+                </div>
+
+                <div class="card">
+                    <img class="card-logos" src="resources/images/card-2-logo.svg" alt="">
+                    <h1 class="title">Safe</h1>
+                    <div class="line"></div>
+                    <div class="box"></div>
+                    <h4 class="description">Everybody has the right to safety and security.</h4>
+                    <a href="#">Read More</a>                                                                            <!-- LINK FOR READ MORE-->
+                </div>
+
+                <div class="card">
+                    <img class="card-logos" src="resources/images/card-3-logo.svg" alt="">
+                    <h1 class="title">Sustainable</h1>
+                    <div class="line"></div>
+                    <div class="box"></div>
+                    <h4 class="description">Promotes equal access for everyone. No one is left behind.</h4>
+                    <a href="#">Read More</a>   
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
