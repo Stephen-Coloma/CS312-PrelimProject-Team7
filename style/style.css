@@ -1,4 +1,4 @@
-/* CSS FOR NAVIGATION AND HEADER AS WELL AS THE VARIABLES USED */
+/* CSS FOR NAVIGATION, HEADE AND FOOTER AS WELL AS THE VARIABLES USED */
 @font-face {
     font-family: 'Roboto';
     font-weight: 400;
@@ -29,7 +29,7 @@
     
     /* font family to be changed */
     --app-font-family: 'Roboto'; 
-    --app-font-size: clamp(14px, 1vw + 1rem, 18px);
+    --app-font-size: clamp(10px, 1vw + .7em, 16px);
     /* mobile view breakpoint */
     --mobile-breakpoint: 420px;
     --tab-breakpoint: 768px;
@@ -98,3 +98,50 @@ nav ul li a {
         display: flex;
     }
 }
+
+/* FOOTER */
+footer{
+    width: 100%;
+    position: relative;
+}
+
+footer .image-holder{
+    width: 100%;
+}
+
+footer .image-holder #orange-building{
+    width: 100%;
+}
+
+.text-holder{
+    font-size: clamp(.5rem, .3rem + 1vw, .8rem);
+    background-color: var(--main-foreground-color);
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: var(--main-bg-color);
+    margin-top: -5px;
+}
+
+.text-holder a{
+    color: var(--main-bg-color);
+}
+
+.text-holder p{
+    padding: 0 5%;
+    max-width: 50%;
+}
+
+footer .white{
+    width: 100%;
+    height: 10%;
+    padding: 1rem;
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(.1rem, .2rem + 1vw, .4rem);
+}
+

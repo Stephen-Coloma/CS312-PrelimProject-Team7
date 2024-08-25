@@ -180,6 +180,7 @@
 .introduction .image-container{
     /* border: green solid 5px; */
     width: 70%;
+    max-width: 500px;
     height: fit-content;
     position: relative;
 }
@@ -314,7 +315,7 @@
 
 .card .description{
     font-family: var(--app-font-family);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 100;
     margin-top: .5rem;
 }
