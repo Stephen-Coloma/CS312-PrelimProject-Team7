@@ -177,7 +177,7 @@
 
 .stats-container {
     background-color: var(--card-bg-color);
-    padding: 2% 0;
+    padding: 2% 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
