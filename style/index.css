@@ -1,85 +1,3 @@
-/* VARAIABLES USED IN THE POROJECT */
-
-:root{
-  --main-bg-color: #fff;
-  --main-foreground-color: #fd9d24;
-  --card-bg-color: #fef3e5;
-  --main-accent-color: #009ddb;
-  --main-text-color: #000;
-  
-  /* font family to be changed */
-  --app-font-family: 'Arial, sans-serif'; 
-  --app-font-size: clamp(14px, 1vw + 1rem, 18px);
-  /* mobile view breakpoint */
-  --mobile-breakpoint: 420px;
-  --tab-breakpoint: 768px;
-}
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-body {
-    font-family: var(--app-font-family);
-    font-size: var(--app-font-size);
-    display: flex;
-    flex-direction: column;
-}
-
-/* header part */
-header {
-    background-color: var(--main-foreground-color);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav{
-    display: none;
-}
-
-.upper-box{
-    height: 2rem;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem 8rem;
-    background-color: var(--main-bg-color);
-    border-bottom: 4px solid var(--main-foreground-color);
-
-}
-
-#header-logo {
-    height: 3rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 5rem;
-    
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* TEMPORARY */
-@media (min-width: 905px) {
-    nav{
-        display: flex;
-    }
-}
-
 /* HOME PAGE */
 .home-page{
     /* border: blue 2px solid; */
@@ -124,7 +42,7 @@ nav ul li a {
     font-size: 10rem;
     display: block;
     border-radius: 1rem;
-    padding: 0 5%;
+    padding: 5% 5% 0 5%;
     margin-top: 5%;
 
 }
@@ -247,7 +165,6 @@ nav ul li a {
 }
 
 
-
 /* SECTION: INTRODUCTION, ASSIGNED TO: STEPHEN */
 /* right content */
 .introduction{
@@ -309,6 +226,7 @@ nav ul li a {
 
 .content-container #discussion{
     font-family: var(--app-font-family);
+    font-weight: 100;
     text-align: justify;
     line-height: 1.5rem;
 }
