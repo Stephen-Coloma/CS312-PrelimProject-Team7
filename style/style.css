@@ -57,19 +57,15 @@ header {
     z-index: 1000;
 }
 
-nav{
-    display: none;
-}
-
 .upper-box{
     height: 2rem;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: .5rem 8rem;
+    padding: .5rem 4rem;
     background-color: var(--main-bg-color);
     border-bottom: 4px solid var(--main-foreground-color);
 
@@ -79,11 +75,19 @@ nav{
     height: 3rem;
 }
 
+nav{
+    display: none;
+}
+
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 5rem;
-    
+    display: flex;  
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 10%; /* Space items evenly from the right */
 }
 
 nav ul li a {
@@ -93,9 +97,15 @@ nav ul li a {
 }
 
 /* TEMPORARY */
-@media (min-width: 905px) {
+@media (min-width: 900px) {
+    /* HANDLE THE ADDING OF BURGERS */
     nav{
         display: flex;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
