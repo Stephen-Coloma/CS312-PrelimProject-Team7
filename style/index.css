@@ -5,6 +5,8 @@
     height: 90vh;
     padding: 5% 2%;
     position: relative;
+    display: flex;
+    align-items: center;
     background-image: url('../resources/images/construction.png'), /* Image */
                       linear-gradient(rgba(255, 255, 255, 0.568), rgb(255, 255, 255)); /* Gradient */
     background-size: cover;
@@ -104,7 +106,8 @@
     .content-wrapper{
         flex-direction: row;
         justify-content: center;
-        gap: 1rem;
+        align-items: center;
+        gap: 2rem;
     }
 
     .content-wrapper .text-content{
@@ -128,7 +131,7 @@
 
     .text-content .lower{
         align-items: start;
-        text-align: left;
+        text-align: justify;
     }
 
     .lower a #learn-more-btn{
@@ -226,12 +229,14 @@
     margin-right: 0;
     text-align: justify;
     line-height: 1.4;
+    text-indent: 2rem;
 }
 
 @media(min-width: 420px){
     .global-statistics #discussion {
         max-width: 70%;
         text-align: center;
+        text-indent: 0;
     }
 
     .stats-container{
@@ -303,9 +308,11 @@
     font-family: var(--app-font-family);
     line-height: 2rem;
     color: var(--main-accent-color);
+    margin-bottom: 1rem;
 }
 
 .content-container #discussion{
+    text-indent: 2rem;
     font-family: var(--app-font-family);
     font-weight: 100;
     text-align: justify;
@@ -435,3 +442,63 @@
         height: 52%;
     }
 }
+
+/* TARGETS: ASSIGNED TO STEPHEN COLOMA */
+.targets{
+    /* border: 2px solid blue; */
+    width: 100%;
+    padding: 2% 0%;
+}
+
+.targets .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container #targets-text{
+    font-size: 2rem;;
+    font-weight: bolder;
+    text-align: center;
+    font-family: var(--app-font-family);
+    color: var(--main-accent-color);
+}
+
+.container .image-holder{
+    /* border: 2px solid blue; */
+    width: 100%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-holder img{
+    display: none;
+    width: 70%;
+}
+
+.container #goal-discussion{
+    /* border: 2px solid green; */
+    padding: 1rem;
+    text-align: justify;
+    line-height: 1.4;
+    text-indent: 2rem;
+}
+
+@media(min-width:768px){
+    .container #goal-discussion{
+        max-width: 80%;
+        text-align: center;
+        text-indent: 0;
+    }
+
+    .container .image-holder{
+        max-width: 80%;
+    }
+
+    .image-holder img{
+        display: block;
+        width: 100%;
+    }
+}
+
