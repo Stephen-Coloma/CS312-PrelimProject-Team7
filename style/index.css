@@ -33,6 +33,12 @@
     align-items: center;
 }
 
+.upper .title img{
+    /* border: green 2px solid; */
+    width: 50%;
+    margin: 3%;
+}
+
 .upper .title #title-text{
     color: var(--main-accent-color);
 }
@@ -45,9 +51,6 @@
     padding: 5% 5% 0 5%;
     margin-top: 5%;
 
-}
-.upper .title img{
-    width: 80%;
 }
 
 .upper .title h1{
@@ -64,6 +67,7 @@
     gap: 1rem;
     padding-top: 1rem;
     position: relative;
+    line-height: 1.4;
 }
 
 #learn-more-btn{
@@ -132,6 +136,10 @@
         right: 0;
     }
 
+    .upper .title img{
+        width: 80%;
+    }
+
     .upper .title h1{
         margin-left: 5%;
        text-align: left;
@@ -140,7 +148,6 @@
 }
 
 @media(max-width: 768px){
-
     .content-wrapper .text-content{
         width: 90%;
     }
@@ -160,19 +167,11 @@
 
 .global-statistics h1 {
     color: var(--main-accent-color);
-    margin: 5%;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     font-family: var(--app-font-family);
-    font-size: clamp(30px, 5vw, 60px);
-}
-
-.global-statistics p {
-    color: var(--main-text-color);
-    margin: 5%;
-    text-align: center;
-    font-family: var(--app-font-family);
-    font-size: clamp(18px, 2.5vw, 30px);
-    line-height: 1.4;
+    font-size: 2rem;
 }
 
 .stats-container {
@@ -199,33 +198,50 @@
     color: var(--main-accent-color);
     text-align: right;
     font-family: var(--app-font-family);
-    font-size: clamp(18px, 2.5vw, 40px);
+    font-size: 1.5rem;
 }
 
 .stats-container > div > span {
     text-align: right;
     font-family: var(--app-font-family);
-    font-size: clamp(25px, 4vw, 60px);
+    font-size: clamp(1rem, 10vw,1.5rem);
 }
 
 #population-img, #birth-img, #death-img {
     max-width: clamp(25px, 4vw, 60px);
+    min-width: clamp(2rem, 1rem + 5vw, 3rem);
 }
 
-@media (max-width: 480px) {
-    .global-statistics p {
-        text-align: justify;
-    }
+.global-statistics .text-container {
+    /* border: red 2px solid; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
 
-    .stats-container div {
-        justify-content: center;
-        flex: 1 1 100%;
+.global-statistics #discussion {
+    /* border: red 2px solid; */
+    margin-left: 0;
+    margin-right: 0;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+@media(min-width: 420px){
+    .global-statistics #discussion {
+        max-width: 70%;
         text-align: center;
     }
 
-    .stats-container > div > div {
-        display: flex;
-        justify-content: center;
+    .stats-container{
+        max-width: 100%;
+    }
+}
+
+@media(min-width: 768px){
+    .stats-container > div > span {
+        font-size: 2.5rem;
     }
 }
 
@@ -293,10 +309,14 @@
     font-family: var(--app-font-family);
     font-weight: 100;
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 1.4;
 }
 
 @media(min-width: 768px){
+    .image-container .logo-container{
+        width: 50%;
+    }
+
     .introduction{
         flex-direction: row;
     }
@@ -390,6 +410,7 @@
     top: 2rem;
     right: 2rem;
     color: var(--main-foreground-color);
+    font-size: 1rem;
 }
 
 .card:hover .box{

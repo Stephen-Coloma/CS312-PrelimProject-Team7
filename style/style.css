@@ -29,7 +29,7 @@
     
     /* font family to be changed */
     --app-font-family: 'Roboto'; 
-    --app-font-size: clamp(10px, 1vw + .7em, 16px);
+    --app-font-size: clamp(16px, 1vw + .5em, 18px);
     /* mobile view breakpoint */
     --mobile-breakpoint: 420px;
     --tab-breakpoint: 768px;
