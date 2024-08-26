@@ -8,13 +8,11 @@ body {
 
 main {
     padding: 1rem;
-    margin: 0rem 0; 
+    margin: 0; 
 }
 
 main section {
-    margin: 1rem 0; 
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin: 1rem 0;
 }
 
 /* Section 1: The Global State */
@@ -29,23 +27,24 @@ main section {
 }
 
 .global-state h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #009ddb;
     margin-bottom: 1rem;
     padding: 0rem;
+    text-align: center;
 }
 
 .global-state p {
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 0rem;
     font-size: 0.9rem;
-    text-align: left;
+    text-align: center;
 }
 
 .country-cards {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .country-cards .card {
@@ -53,23 +52,52 @@ main section {
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .country-cards .card img {
     width: 100%;
-    height: clamp(12rem, 25vw, 16rem); 
+    height: auto; 
     object-fit: cover; 
     display: block;
 }
 
 .country-cards .card-content {
-    padding: 1.5rem;
+    padding: 1rem;
+    text-align: left;
 }
 
 .country-cards .card-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Media Queries */
+/* Tablet and Desktop Views */
+@media (min-width: 768px) {
+    .global-state h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .global-state p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .country-cards {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .country-cards .card {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .country-cards .card img {
+        height: clamp(12rem, 25vw, 16rem); 
+    }
 }
 
 /* Section 2: Video Embed */
@@ -370,7 +398,7 @@ main section {
 
 .heading-container {
     background-color: #f8961e; 
-    padding: 0rem;
+    padding: 1rem 0;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -512,6 +540,8 @@ footer, .image-holder, .text-holder, .white {
     margin: 0;
     padding: 0;
 }
+
+
 
 /* Media Queries */
 @media (min-width: 420px) {
