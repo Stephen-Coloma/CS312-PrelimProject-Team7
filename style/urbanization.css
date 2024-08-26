@@ -411,7 +411,7 @@ main section {
 
     .disaster-header p, .issue-header p {
         font-size: 0.9rem; 
-        text-align: p;
+        text-align: justify;
     }
 }
 
