@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    font-weight: light;
+    font-weight: 100;
     src: url('../resources/fonts/poppins-light-webfont.woff2') format('woff2'),
         url('../resources/fonts/poppins-light-webfont.woff') format('woff');
 }
