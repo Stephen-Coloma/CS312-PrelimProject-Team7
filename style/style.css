@@ -1,20 +1,20 @@
 /* CSS FOR NAVIGATION, HEADE AND FOOTER AS WELL AS THE VARIABLES USED */
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     font-weight: 400;
     src: url('../resources/fonts/poppins-regular-webfont.woff2') format('woff2'),
         url('../resources/fonts/poppins-regular-webfont.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     font-weight: bold;
     src: url('../resources/fonts/poppins-bold-webfont.woff2') format('woff2'),
         url('../resources/fonts/poppins-bold-webfont.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     font-weight: 100;
     src: url('../resources/fonts/poppins-light-webfont.woff2') format('woff2'),
         url('../resources/fonts/poppins-light-webfont.woff') format('woff');
@@ -28,7 +28,7 @@
     --main-text-color: #000;
     
     /* font family to be changed */
-    --app-font-family: 'Roboto'; 
+    --app-font-family: 'Poppins'; 
     --app-font-size: clamp(16px, 1vw + .5em, 18px);
     /* mobile view breakpoint */
     --mobile-breakpoint: 420px;
