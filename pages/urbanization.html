@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbanization</title>
+    
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/urbanization.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,11 +26,192 @@
                     <li><a href="../pages/conclusion.html">Conclusion</a></li>
                 </ul>
             </nav>
+
+            <!-- MENU FOR NAVIGATION -->
+            <div class="menu">
+                
+                <input type="checkbox" id="toggle" class="toggle-checkbox">
+                <label for="toggle" class="button-toggle"></label>
+
+                <div class="toggle-content">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/urbanization.html">Urbanization</a></li>
+                        <li><a href="../pages/initiatives.html">Initiatives</a></li>
+                        <li><a href="../pages/explore.html">Explore</a></li>
+                        <li><a href="../pages/conclusion.html">Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-
+    <!-- Urbanization Section -->
     <main>
-        ADD CONTENT TO URBANIZATION HERE
+        <!-- Subsection 1: The Global State -->
+        <section class="global-state">
+            <div class="header-container">
+                <h2>The Global State</h2>
+                <p>A quick look at urban challenges in the Philippines, Uganda, and India, that focuses on overcrowding, poor infrastructure, and rapid urban growth.</p>
+            </div>
+            <div class="country-cards">
+                <div class="card">
+                    <img src="../resources/images/urbanization-images/philippines.svg" alt="Philippines Image">
+                    <div class="card-content">
+                        <h3>Philippines</h3>
+                        <p>Urban sprawl and poor infrastructure in the Philippines lead to challenges like inadequate public transport, poor air quality, and lack of green spaces. Addressing these requires better urban planning and data collection.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../resources/images/urbanization-images/uganda.svg" alt="Uganda Image">
+                    <div class="card-content">
+                        <h3>Uganda</h3>
+                        <p>Uganda's cities struggle with inadequate housing, sanitation, and clean water due to rapid growth. These issues are most severe in informal settlements, necessitating coordinated urban development efforts.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../resources/images/urbanization-images/india.svg" alt="India Image">
+                    <div class="card-content">
+                        <h3>India</h3>
+                        <p>India’s rapid urbanization results in overcrowding, water shortages, and significant pollution. Informal settlements face severe inequalities in access to services, highlighting the need for comprehensive urban policies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sub-section 2: Video Embed -->
+        <section class="video-section">
+            <h2>The Current State of Cities in the Philippines</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/TO0gqKg1uXI" 
+                        title="The Current State of Cities in the Philippines" 
+                        style="border: none;" allowfullscreen></iframe>
+            </div>
+        </section>
+    
+        <!-- Section 3: Urbanization Graph -->
+        <section class="urbanization-graph">
+            <div class="graph-image">
+                <img src="../resources/images/urbanization-images/urbanization-graph.svg" alt="Urbanization Graph">
+            </div>
+            <div class="graph-content">
+                <h3>A Decade of Growth</h3>
+                <h2>Steady Urbanization in the Philippines</h2>
+                <p>The urbanization rate in the Philippines has steadily increased over the past decade, rising from 45.90% in 2013 to 48.29% in 2023, according to Statista. This growth is largely driven by the concentration of economic opportunities in cities, where better jobs, wages, and services attract people from rural areas. As a result, cities like Metro Manila, Cebu, and Davao have become major economic hubs, contributing significantly to the country's GDP. However, this rapid urbanization also presents challenges, including overcrowding, housing shortages, traffic congestion, and environmental degradation. Additionally, the migration to urban areas has intensified socio-economic inequalities, highlighting the need for policies that promote balanced regional development and sustainable urban growth.</p>
+            </div>
+        </section>
+
+    
+        <!-- Section 4: Housing Backlog -->
+        <section class="housing-backlog">
+            <div class="housing-backlog-header">
+                <h2>National Housing Backlog in the Philippines</h2>
+            </div>
+            <div class="backlog-stats">
+                <div class="backlog-item">
+                    <h3>PHILIPPINE NATIONAL HOUSING BACKLOG</h3>
+                    <p class="big-number">3.68 million units</p>
+                </div>
+                <div class="backlog-item">
+                    <h3>INFORMAL SETTLERS</h3>
+                    <p class="big-number">3.62 million families</p>
+                </div>
+            </div>
+            <div class="backlog-content">
+                <div class="backlog-text">
+                    <h3>Housing Shortage Crisis</h3>
+                    <p>The Philippines faces a significant challenge with a national housing backlog of 6.38 million units. This severe shortage has left approximately 3.62 million families living as informal settlers. These families often reside in makeshift homes under challenging living conditions.</p>
+                    <h3>Impact on Communities</h3>
+                    <p>The lack of adequate housing affects millions, contributing to social and economic difficulties. Many informal settler families lack access to basic amenities such as clean water, electricity, and sanitary facilities, which are essential for a dignified standard of living.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 5: Disaster Vulnerability -->
+        <section class="disaster-vulnerability">
+            <div class="disaster-header">
+                <h2>Disaster Vulnerability in the Philippines</h2>
+                <p>The Philippines is recognized as one of the most disaster-prone countries in the world, primarily due to its geographical location. Each year, an average of 22 tropical cyclones enter the Philippine Area of Responsibility (PAR), with 6 to 7 of these cyclones causing significant damage to communities across the country. These frequent and intense natural disasters pose ongoing challenges to the nation’s infrastructure, economy, and most importantly, the safety and well-being of its people. The repeated damage contributes to the worsening of poverty in vulnerable areas. The high disaster frequency shows the need for disaster preparedness, resilient infrastructure, and effective recovery plans. Strengthening these areas is crucial to mitigating the impacts of these frequent natural events and protecting the lives and livelihoods of millions of Filipinos.</p>
+            </div>
+            <div class="disaster-images">
+                <img src="../resources/images/urbanization-images/disaster-image-1.svg" alt="Disaster Image 1">
+                <img src="../resources/images/urbanization-images/disaster-image-2.svg" alt="Disaster Image 2">
+                <img src="../resources/images/urbanization-images/disaster-image-3.svg" alt="Disaster Image 3">
+            </div>
+        </section>
+
+        <!-- Section 6: Other Issues -->
+        <section class="issues-philippines">
+            <div class="issues-images">
+                <img src="../resources/images/urbanization-images/slums-image-1.svg" alt="Housing Crisis">
+                <img src="../resources/images/urbanization-images/slums-image-2.svg" alt="Traffic Congestion">
+                <img src="../resources/images/urbanization-images/slums-image-3.svg" alt="Air Quality Concerns">
+            </div>
+            <div class="issues-philippines">
+                <div class="issue-header">
+                    <h2>Housing Crisis</h2>
+                    <p>As of May 16, 2024, the Philippines, home to over 119.1 million people, faces a severe housing shortage. This crisis is highlighted by the current deficit of 6.5 million homes, a figure projected to surge to a staggering 22.0 million by 2040. The rapid increase, amounting to 6,300 percent over the years, has left millions of families in dire living conditions, residing in shelters unfit for habitation. The urgency to address this escalating problem is important, as it affects not only the well-being of millions but also the social fabric of the nation.</p>
+                </div>
+                <div class="issue-header">
+                    <h2>Traffic Congestion</h2>
+                    <p>The worsening traffic congestion in Metro Manila has reached a critical level, prompting the Management Association of the Philippines (MAP) to urge the government to declare a "state of calamity." This severe traffic has an economic impact, draining an estimated PHP 3.5 billion from the economy each day. The congestion not only affects economic productivity but also contributes to increased pollution and stress among the commuting public. Immediate and effective measures are necessary to alleviate the congestion and restore efficient mobility in the capital.</p>
+                </div>
+                <div class="issue-header">
+                    <h2>Air Quality Concerns</h2>
+                    <p>In global standings, the Philippines ranks 79th out of 134 countries in terms of air pollution, indicating significant environmental challenges. The prevalent air quality issues underscore the need for comprehensive policies aimed at reducing emissions and promoting sustainable urban practices. Improving air quality is crucial not only for environmental health but also for the well-being of the population, particularly in densely populated urban areas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: At a Glance - The Philippines in Numbers -->
+        <section class="philippines-numbers">
+            <div class="heading-container">
+                <h2>At a Glance: The Philippines in Numbers</h2>
+            </div>
+            <div class="numbers-grid">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <div class="number-item">
+                        <h3>PHILIPPINE POPULATION AS OF 2020</h3>
+                        <p>109,035,343</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>GROSS DOMESTIC PRODUCT FULL YEAR GROWTH IN 2022</h3>
+                        <p>7.6%</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>EMPLOYMENT RATE IN THE PHILIPPINES AS OF 2023</h3>
+                        <p>95.2%</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>CITIES AND URBAN CENTERS LOCATED AMONG THE COASTS</h3>
+                        <p>70%</p>
+                    </div>
+                </div>
+                <!-- Center Image-->
+                <div class="image-item">
+                    <img src="../resources/images/urbanization-images/philippines-center-statistical-data.svg" alt="Philippines">
+                </div>
+                <!-- Right Column -->
+                <div class="right-column">
+                    <div class="number-item">
+                        <h3>INFORMAL SETTLERS FAMILIES</h3>
+                        <p>3.7 million</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>MOST POPULOUS CITIES WHERE URBAN GROWTH IS CONCENTRATED</h3>
+                        <p>16</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>DAMAGE COST DUE TO NATURAL DISASTERS IN 2021</h3>
+                        <p>PHP 68.8 billion</p>
+                    </div>
+                    <div class="number-item">
+                        <h3>COUNTRIES MOST AFFECTED BY WEATHER FROM 2000 - 2019</h3>
+                        <p>4th</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>
@@ -43,6 +229,5 @@
             <h1>2024© Copyright. All Rights Reserved.</h1>
         </div>
     </footer>
-
 </body>
 </html>
