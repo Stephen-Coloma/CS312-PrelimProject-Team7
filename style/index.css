@@ -1,5 +1,7 @@
 body p{
     word-spacing: .4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /* HOME PAGE */
@@ -93,7 +95,7 @@ body p{
     border-radius: 1.2rem;
     color: var(--main-bg-color);
     letter-spacing: .1rem;
-    font-weight: 600;
+    font-weight: bold;
     font-size: .8rem;
     text-decoration: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -256,7 +258,6 @@ body p{
     text-align: justify;
     line-height: 1.4;
     text-indent: 2rem;
-    font-weight: 100;
 }
 
 @media(min-width: 420px){
@@ -332,7 +333,6 @@ body p{
 
 .content-container #main-title-text{
     font-size: 2rem;
-    font-weight: bolder;
     font-family: var(--app-font-family);
     line-height: 2rem;
     color: var(--main-accent-color);
@@ -342,7 +342,6 @@ body p{
 .content-container #discussion{
     text-indent: 2rem;
     font-family: var(--app-font-family);
-    font-weight: 100;
     text-align: justify;
     line-height: 1.4;
 }
@@ -380,7 +379,6 @@ body p{
 
 .title-container #title{
     font-size: 2rem;;
-    font-weight: bolder;
     text-align: center;
     font-family: var(--app-font-family);
     color: var(--main-accent-color);
@@ -436,9 +434,9 @@ body p{
 .card .description{
     font-family: var(--app-font-family);
     font-size: 1rem;
-    font-weight: 100;
     margin-top: .5rem;
     line-height: 1.4;
+    font-weight: 400;
 }
 
 .card a {
@@ -492,7 +490,6 @@ body p{
 
 .container #targets-text{
     font-size: 2rem;;
-    font-weight: bolder;
     text-align: center;
     font-family: var(--app-font-family);
     color: var(--main-accent-color);
@@ -517,7 +514,6 @@ body p{
     text-align: justify;
     line-height: 1.4;
     text-indent: 2rem;
-    font-weight: 100;
 }
 
 @media(min-width:768px){
@@ -557,7 +553,6 @@ body p{
     padding: 1rem;
     border-radius: 1rem;
     width: 100%;
-    font-weight: 100;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
