@@ -4,7 +4,7 @@
     padding: 2rem;
 }
 
-.top-part .left h1 {
+.top-part .left h2 {
     margin: 0;
     font-size: 2rem;
     text-align: left;
@@ -130,7 +130,7 @@
     flex-direction: column; 
 }
 
-.tier strong {
+.tier h2 strong {
     display: block;
     font-size: 1rem; 
     font-weight: bold;
