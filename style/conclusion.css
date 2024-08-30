@@ -1,94 +1,218 @@
-body p{
-    word-spacing: .4rem;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.7);
-    line-height: 1.4;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.importance{
-    width: 100%;
-    /* border: solid blue 5px; */
+.conclusion-section {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
 }
 
-.content{
-    /* border: solid green 5px; */
-    width: 100%;
-    padding: 1rem;
+.content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%; 
+    gap: 1rem;
 }
 
-.content .left{
-    /* border: solid violet 5px; */
-    width: 70%;
-}
-
-#conclusion-logo{
-    /* border: solid black 5px; */
+.image-box {
     width: 100%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
-.content .right{
-    /* border: solid violet 5px; */
+.image-box img {
+    width: 100%;
+    height: auto;
 }
 
-.right #title{
-    color: var(--main-accent-color);
-    font-size: 1.5rem;
+.text-box {
+    width: 100%;
     text-align: center;
-    margin: 1rem 0;
+    padding: 0 1rem;
 }
 
-.right #discussion{
+.text-box h2 {
+    font-size: 1.5rem;
+    color: #009ddb;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.text-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
     text-align: justify;
-    text-indent: 2rem;
 }
 
 
-@media(min-width: 768px){
-    .content{
-        width: 70%;
-        max-width: 1400px;
+@media (min-width: 768px) {
+    .conclusion-section {
+        padding: 2rem 4rem;
+        margin: 4rem 0;
+    }
+
+    .content-wrapper {
         flex-direction: row;
-        gap: 2rem;
-    }
-
-    .content .left{
-        width: 50%;
-    }
-
-    .content .right{
-        width: 50%;
-    }
-
-    .right #title{
         text-align: left;
-        margin-bottom: 1rem;
+        max-width: 1200px;
+        gap: 3rem;
+    }
+
+    .image-box {
+        flex: 1;
+        max-width: 50%;
+        padding: 0;
+    }
+
+    .image-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-box {
+        flex: 1.5;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .text-box h2 {
         font-size: 2rem;
+        text-align: left;
+    }
+
+    .text-box p {
+        font-size: 1.125rem;
     }
 }
 
-.action{
+
+.call-to-action-section {
+    background-image: url('../resources/images/city-background.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-background {
+    background-color: #f39822;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+
+.cta-background h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.cta-content {
+    background-color: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -1rem;
+    border-radius: 0 0 8px 8px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.cta-content p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.cta-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #333;
+}
+
+.cta-content ul li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .call-to-action-section {
+        height: 100vh;
+        padding: 0;
+    }
+
+    .cta-background {
+        padding: 1rem;
+        max-width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .cta-background h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-content {
+        padding: 1.5rem;
+        max-width: 100%;
+        margin-top: 0;
+        box-shadow: none;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .cta-content p, .cta-content ul li {
+        font-size: 0.9rem;
+    }
+}
+
+.pre-footer-section {
+    padding: 1rem;
+    background-color: #fff;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url('../resources/images/city-bg.svg');
-    background-size:contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    
+    align-items: center;
+    text-align: left;
+    margin-top: 5rem;
 }
 
-.action .container{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    ;
+.pre-footer-content {
+    max-width: 900px;
+    width: 100%;
+    color: #333;
+    text-align: justify;
+}
+
+.pre-footer-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .pre-footer-section {
+        padding: 1.5rem;
+    }
+
+    .pre-footer-content p {
+        font-size: 0.9rem;
+    }
 }
 
