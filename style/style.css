@@ -1,21 +1,21 @@
 /* CSS FOR NAVIGATION, HEADE AND FOOTER AS WELL AS THE VARIABLES USED */
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     font-weight: 400;
     src: url('../resources/fonts/poppins-regular-webfont.woff2') format('woff2'),
         url('../resources/fonts/poppins-regular-webfont.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     font-weight: bold;
     src: url('../resources/fonts/poppins-bold-webfont.woff2') format('woff2'),
         url('../resources/fonts/poppins-bold-webfont.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    font-weight: light;
+    font-family: 'Poppins';
+    font-weight: 100;
     src: url('../resources/fonts/poppins-light-webfont.woff2') format('woff2'),
         url('../resources/fonts/poppins-light-webfont.woff') format('woff');
 }
@@ -26,10 +26,9 @@
     --card-bg-color: #fef3e5;
     --main-accent-color: #009ddb;
     --main-text-color: #000;
-    
     /* font family to be changed */
-    --app-font-family: 'Roboto'; 
-    --app-font-size: clamp(10px, 1vw + .7em, 16px);
+    --app-font-family: 'Poppins'; 
+    --app-font-size: 1rem;
     /* mobile view breakpoint */
     --mobile-breakpoint: 420px;
     --tab-breakpoint: 768px;
@@ -68,7 +67,7 @@ header {
     padding: .5rem 4rem;
     background-color: var(--main-bg-color);
     border-bottom: 4px solid var(--main-foreground-color);
-
+    position: relative;
 }
 
 #header-logo {
@@ -91,9 +90,71 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
     font-weight: bold;
+    font-size: 1rem;
+}
+
+.header-content .menu{
+    position: absolute;
+    right: 1rem;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.button-toggle {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-image: url('../resources/images/menu-logo.svg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* hiding the checkbox */
+.menu .toggle-checkbox {
+    display: none;
+}
+
+/* initially hiding the content  */
+.menu .toggle-content{
+    display: none;
+}
+
+/* showing and unshowing the content */
+.toggle-checkbox:checked ~ .toggle-content {
+    display: block;
+}
+
+/* swapping of images */
+.toggle-checkbox:checked ~ .button-toggle {
+    background-image: url('../resources/images/x-logo.svg'); 
+}
+
+/* stiling the toggle content */
+.menu .toggle-content{
+    height: 100vh;
+    width: 100vw;
+    top: 6.1rem;
+    left: 0;
+    position:fixed;
+    background-color: var(--main-foreground-color);
+    padding: 3rem;
+}
+
+.toggle-content ul{
+    list-style: none;
+}
+
+.toggle-content ul li a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
 /* TEMPORARY */
@@ -107,6 +168,11 @@ nav ul li a {
         display: flex;
         justify-content: space-between;
     }
+
+    .header-content .menu{
+        display: none;
+    }
+    
 }
 
 /* FOOTER */
