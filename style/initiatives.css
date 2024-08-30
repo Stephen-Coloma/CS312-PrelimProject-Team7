@@ -47,7 +47,7 @@
     width: 47.5%;
 }
 
-.academic-studies h1 {
+.academic-studies h2 {
     font-size: clamp(24px, 1.979vw, 38px);
     color: var(--main-accent-color);
 }
@@ -73,7 +73,7 @@
         flex: 1 1 calc(100%);
     }
 
-    .academic-studies h1, span {
+    .academic-studies h2, span {
         width: 100%;
     }
 }
