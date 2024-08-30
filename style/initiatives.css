@@ -1,0 +1,79 @@
+.academic-studies, .urban-planning-strategies, .case-studies {
+    margin: 2% 10%;
+}
+
+.container, .academic-studies > div:not(.card) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.card {
+    flex: 1 1 calc(50% - 5%);
+    border: 3px solid var(--main-foreground-color);
+    position: relative;
+    border-radius: 14px;
+    margin: 2.4% 0;
+    padding: 3%;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card h2 {
+    font-size: clamp(20px, 1.979vw, 24px);
+    line-height: 1.2;
+}
+
+.card p {
+    font-size: clamp(16px, 1.979vw, 20px);
+    line-height: 1.2;
+    text-align: justify;
+    margin: 4% 0;
+}
+
+.card a {
+    font-size: clamp(14px, 1.979vw, 18px);
+    color: var(--main-foreground-color);
+    position: absolute;
+    right: 4.5%;
+    bottom: 8%;
+    transition: color 0.3s;
+}
+
+/* Academic Studies */
+.academic-studies h1, span {
+    align-self: center;
+    width: 47.5%;
+}
+
+.academic-studies h1 {
+    font-size: clamp(24px, 1.979vw, 38px);
+    color: var(--main-accent-color);
+}
+
+.academic-studies span {
+    font-size: clamp(20px, 1.979vw, 23.5px);
+    /* font-size: 24px */
+}
+
+.card:hover {
+    color: white;
+    background-color: var(--main-foreground-color);
+    transition: background-color 0.5s, color 0.2s;
+}
+
+.card:hover a {
+    color: var(--main-bg-color);
+    transition: color 0.2s;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(100%);
+    }
+
+    .academic-studies h1, span {
+        width: 100%;
+    }
+}
