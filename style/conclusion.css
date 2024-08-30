@@ -1,0 +1,94 @@
+body p{
+    word-spacing: .4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.4;
+}
+
+.importance{
+    width: 100%;
+    /* border: solid blue 5px; */
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    /* border: solid green 5px; */
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .left{
+    /* border: solid violet 5px; */
+    width: 70%;
+}
+
+#conclusion-logo{
+    /* border: solid black 5px; */
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.content .right{
+    /* border: solid violet 5px; */
+}
+
+.right #title{
+    color: var(--main-accent-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.right #discussion{
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+
+@media(min-width: 768px){
+    .content{
+        width: 70%;
+        max-width: 1400px;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .content .left{
+        width: 50%;
+    }
+
+    .content .right{
+        width: 50%;
+    }
+
+    .right #title{
+        text-align: left;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+}
+
+.action{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('../resources/images/city-bg.svg');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.action .container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    ;
+}
+
