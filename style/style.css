@@ -28,7 +28,7 @@
     --main-text-color: #000;
     /* font family to be changed */
     --app-font-family: 'Poppins'; 
-    --app-font-size: 1rem;
+    --app-font-size: .9rem;
     /* mobile view breakpoint */
     --mobile-breakpoint: 420px;
     --tab-breakpoint: 768px;
@@ -173,6 +173,12 @@ nav ul li a {
         display: none;
     }
     
+}
+
+@media(min-width: 768px){
+    :root{
+        --app-font-size: 1rem;
+      }
 }
 
 /* FOOTER */
