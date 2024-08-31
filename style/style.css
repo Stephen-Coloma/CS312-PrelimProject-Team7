@@ -175,6 +175,12 @@ nav ul li a {
     
 }
 
+@media(min-width: 768px){
+    :root{
+        --app-font-size: 1rem;
+      }
+}
+
 /* FOOTER */
 footer{
     width: 100%;
