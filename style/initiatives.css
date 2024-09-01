@@ -1,10 +1,10 @@
-body, a, h2, span, p {
+main, main a, main h2, main span, main p {
     font-family: var(--app-font-family);
     font-size: clamp(16px, 1.979vw, 20px);
     line-height: 1.2;
 }
 
-p {
+main p {
     text-align: justify;
 }
 
