@@ -90,10 +90,38 @@ nav ul li {
 }
 
 nav ul li a {
+    position: relative;
+    display: inline-block;
     color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: var(--main-foreground-color);
+}
+
+/* Create a pseudo-element for the bottom border */
+nav ul li a::after {
+    content: '';
+    background-color: var(--main-foreground-color);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 20px;
+    width: 0;
+    height: 2px;
+    transition: all 0.2s ease;
+    transform: translateX(-50%);
+}
+
+/* Expand the border from center to edges on hover */
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
 }
 
 .header-content .menu{
