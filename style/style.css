@@ -119,30 +119,33 @@ nav ul li a {
     display: none;
 }
 
-/* initially hiding the content  */
-.menu .toggle-content{
-    display: none;
+/* initially hiding the content with 0 height */
+.menu .toggle-content {
+    height: 0;
+    width: 100vw;
+    top: 6.1rem;
+    left: 0;
+    position: fixed;
+    background-color: var(--main-foreground-color);
+    padding: 0 3rem;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
 }
 
-/* showing and unshowing the content */
+/* adding a margin to bring down the menu content */
+.menu .toggle-content > ul {
+    margin-top: 5%;
+}
+
+/* showing and expanding the content */
 .toggle-checkbox:checked ~ .toggle-content {
-    display: block;
+    height: 100vh;
+    padding: 0 3rem;
 }
 
 /* swapping of images */
 .toggle-checkbox:checked ~ .button-toggle {
-    background-image: url('../resources/images/x-logo.svg'); 
-}
-
-/* stiling the toggle content */
-.menu .toggle-content{
-    height: 100vh;
-    width: 100vw;
-    top: 6.1rem;
-    left: 0;
-    position:fixed;
-    background-color: var(--main-foreground-color);
-    padding: 3rem;
+    background-image: url('../resources/images/x-logo.svg');
 }
 
 .toggle-content ul{
