@@ -292,7 +292,6 @@ main p{
     text-indent: 2rem;
 }
 
-/* THIS IS TO WHERE TO WORK:  */
 @media(min-width: 420px){
 /* IMAGES */
     .stats-container #population-img {
@@ -362,29 +361,29 @@ main p{
 
 .introduction .image-container{
     /* border: green solid 5px; */
-    width: 70%;
+    width: 100%;
     max-width: 500px;
-    height: fit-content;
     position: relative;
 }
 
 .image-container #img{
     width: 100%;
-    border-radius: 1rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .image-container .logo-container{
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -200px;
+    /* border: green solid 5px; */
     padding: .5rem;
     background-color: var(--main-bg-color);
+    border-radius: 1rem;
 }
 
 .logo-container #logo{
-    width: 100%;
+    width: 70%;
 }
 
 /* left content */
@@ -414,6 +413,34 @@ main p{
     font-family: var(--app-font-family);
     text-align: justify;
     line-height: 1.4;
+}
+
+@media(min-width: 420px){
+    .introduction .image-container{
+        /* border: green solid 5px; */
+        width: 70%;
+        max-width: 500px;
+        position: relative;
+    }
+
+    .image-container #img{
+        border-radius: 1rem;
+    }
+
+    .image-container .logo-container{
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: .5rem;
+        background-color: var(--main-bg-color);
+        border-radius: 0;
+    }
+    
+    .logo-container #logo{
+        width: 100%;
+    }
+    
 }
 
 @media(min-width: 768px){
