@@ -205,43 +205,75 @@ main p{
 }
 
 .stats-container {
-    background-color: var(--card-bg-color);
+    background-color: var(--main-bg-color);
     padding: 2% 2%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.stats-container div {
-    text-align: right;
+.stats-container .stats-card-container {
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .stats-container > div > div {
+    background-color: var(--main-foreground-color);   
     display: flex;
-    justify-content: right;
-    align-items: end;
+    justify-content: left;
+    padding-left: 3rem;
+    gap: 1rem;
+    align-items: center;
 }
 
 .stats-container h2 {
     color: var(--main-accent-color);
-    text-align: right;
+    text-align: left;
     font-family: var(--app-font-family);
     font-size: 1.5rem;
+    line-height: 0;
+    color: var(--main-bg-color);
+    width: 50%;
+    height: 60px;
+
 }
+
+.stats-container .image-holder {
+    height: 3rem;
+    width: 3rem;
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.stats-container #population-img{
+    background-image: url('../resources/images/population-mobile.svg');
+}
+
+.stats-container #birth-img {
+    background-image: url('../resources/images/birth-mobile.svg');
+}
+
+.stats-container #death-img {
+    background-image: url('../resources/images/death-mobile.svg');
+}
+
+
 
 .stats-container > div > span {
     text-align: right;
     font-family: var(--app-font-family);
-    font-size: clamp(1rem, 10vw,1.5rem);
+    font-size: clamp(1rem, 10vw, 2rem);
+    color: var(--main-accent-color);
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-foreground-color);
 }
 
-#population-img, #birth-img, #death-img {
-    max-width: clamp(25px, 4vw, 60px);
-    min-width: clamp(2rem, 1rem + 5vw, 3rem);
-}
 
 .global-statistics .text-container {
     /* border: red 2px solid; */
@@ -260,7 +292,21 @@ main p{
     text-indent: 2rem;
 }
 
+/* THIS IS TO WHERE TO WORK:  */
 @media(min-width: 420px){
+/* IMAGES */
+    .stats-container #population-img {
+        background-image: url('../resources/images/population-img.svg');
+    }
+
+    .stats-container #birth-img {
+        background-image: url('../resources/images/birth-img.svg');
+    }
+
+    .stats-container #death-img {
+        background-image: url('../resources/images/death-img.svg');
+    }
+
     .global-statistics #population-discussion {
         max-width: 70%;
         text-align: center;
@@ -269,6 +315,30 @@ main p{
 
     .stats-container{
         max-width: 100%;
+        background-color: var(--card-bg-color);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .stats-container > div > div{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .stats-container .stats-card-container{
+        width: auto;
+        margin-bottom: 0;
+    }
+    .stats-container h2{
+        color: var(--main-accent-color);
+        width: auto;
+    }
+
+    .stats-container > div > span{
+        height: auto;
+        color: black;
+        font-size: clamp(1rem, 10vw, 1.5rem);
+        border: none;
     }
 }
 
