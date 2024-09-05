@@ -466,12 +466,19 @@ main p{
 .understanding-significance{
     width: 100%;
     padding: 2% 0%;
+    background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)),
+        url('../resources/images/significance-background.svg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
 }
 
 .understanding-significance .title-container{
     /* border: solid green 5px; */
     display: flex;
     justify-content: center;
+    padding: .3rem;
+    /* background-color: var(--main-bg-color); */
 }
 
 .title-container #title{
@@ -492,11 +499,12 @@ main p{
 }
 
 .card-container .card{
-    border: 0.15rem var(--main-foreground-color), solid;
-    border-radius: 1rem;
+    border: 0.15rem var(--main-foreground-color) solid;
+    border-radius: .5rem;
     padding: 7% 2% 10% 2%;
     max-width:17rem;
     position: relative;
+    background-color:rgba(255, 255, 255, .8); 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -555,6 +563,11 @@ main p{
     color: var(--main-bg-color);
 }
 
+@media(min-width: 768px){
+    .understanding-significance{
+        background-image: none;
+    }
+}
 @media(min-width: 768px){
     .card a {
         top: auto;
@@ -624,7 +637,7 @@ main p{
         max-width: 80%;
     }
 
-    .image-holder img{
+    .image-holder #figure{
         display: block;
         width: 100%;
     }
