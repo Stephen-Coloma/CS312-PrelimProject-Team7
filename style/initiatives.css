@@ -20,7 +20,7 @@ main p {
 .case-studies .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 5vw;
 }
 
 /* Card Behavior */
@@ -46,11 +46,14 @@ main p {
     font-size: clamp(20px, 1.979vw, 23.5px);
 }
 
+.academic-studies .container {
+    margin: 3% 0;
+}
+
 .academic-studies .card {
     border: 3px solid var(--main-foreground-color);
     position: relative;
     border-radius: 14px;
-    margin: 2.4% 0;
     padding: 3%;
     box-sizing: border-box;
     padding-bottom: 50px;
@@ -88,7 +91,7 @@ main p {
 /* Second Section */
 .second-section {
     background: linear-gradient(to bottom, #009ae8, #7cd5f7);
-    padding: 2% 6%;
+    padding: 6%;
     margin-bottom: 2%;
 }
 
@@ -111,8 +114,7 @@ main p {
     background-color: var(--main-foreground-color);
     display: block;
     text-align: center;
-    margin-top: 2%;
-    margin-bottom: -2%;
+    margin: 3% 0;
     padding: 1% 5%;
 }
 
@@ -121,7 +123,6 @@ main p {
     flex-direction: column;
     background-color: var(--card-bg-color);
     border: 2px solid var(--main-foreground-color);
-    margin-top: 5%;
 }
 
 .urban-planning-strategies .card img {
@@ -138,12 +139,14 @@ main p {
 
 /* Case Studies */
 .case-studies h2 {
-    margin-top: 4%;
-    margin-bottom: -2%;
+    margin: 5% 0 3% 0;
+}
+
+.case-studies .card p::before {
+    content: "• ";
 }
 
 .case-studies .card {
-    margin-top: 5%;
     display: flex;
     flex-direction: column;
 }
@@ -168,7 +171,56 @@ main p {
         flex: 1 1 calc(100%);
     }
 
+    .academic-studies .card {
+        border-radius: 0;
+    }
+
+    .academic-studies > div:not(.container) {
+        margin: 3%;
+    }
+
+    .academic-studies > div:not(.container) h2 {
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .academic-studies > div:not(.container) span {
+        margin-bottom: 5%;
+        text-align: justify;
+    }
+
+    .second-section > div {
+        border-radius: 3.33px;
+    }
+
+    .urban-planning-strategies h2 {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .urban-planning-strategies > span {
+        margin: 5% 0;
+    }
+
     .urban-planning-strategies .card span {
         text-align: center;
     }
+
+    .case-studies h2 {
+        margin: 13% 0 6% 0;
+        text-align: center;
+    }
+
+    .case-studies .card span {
+        margin: 5% 00;
+    }
+
+    .case-studies .card img {
+        border-radius: 14px;
+    }
+
+    .case-studies .card p::before {
+        content: "";
+    }
+    
 }
