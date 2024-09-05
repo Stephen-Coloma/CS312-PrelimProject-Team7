@@ -31,3 +31,9 @@ main ol {
     overflow-wrap: break-word;
     list-style-position: inside;
 }
+
+@media (max-width: 768px) {
+    .container {
+        border-radius: 3.33px;
+    }
+}
