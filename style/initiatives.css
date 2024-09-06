@@ -1,7 +1,7 @@
 main, main a, main h2, main span, main p {
     font-family: var(--app-font-family);
-    font-size: clamp(16px, 1.979vw, 20px);
-    line-height: 1.2;
+    font-size: clamp(14px, 1.979vw, 18px);
+    line-height: 1.5;
 }
 
 main p {
@@ -38,12 +38,12 @@ main p {
 }
 
 .academic-studies > div:not(.container) h2 {
-    font-size: clamp(24px, 1.979vw, 38px);
+    font-size: clamp(28px, 1.979vw, 34px);
     color: var(--main-accent-color);
 }
 
 .academic-studies > div:not(.container) span {
-    font-size: clamp(20px, 1.979vw, 23.5px);
+    font-size: clamp(20px, 1.979vw, 23px);
 }
 
 .academic-studies .container {
@@ -61,7 +61,7 @@ main p {
 }
 
 .academic-studies .card strong {
-    font-size: clamp(20px, 1.979vw, 24px);
+    font-size: clamp(20px, 1.979vw, 23px);
     display: block;
 }
 
@@ -104,7 +104,7 @@ main p {
 
 .urban-planning-strategies h2,
 .case-studies h2 {
-    font-size: clamp(30px, 4vw, 55px);
+    font-size: clamp(28px, 1.979vw, 34px);
     color: var(--main-accent-color);
     margin-bottom: 2%;
 }
@@ -202,12 +202,31 @@ main p {
         background-image: url('../resources/images/initiatives-images/climate-change-action-background.jpg');
     }
 
+    
+    .academic-studies > div:not(.container) {
+        margin: 3%;
+    }
+
+    .academic-studies > div:not(.container) h2 {
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .academic-studies > div:not(.container) span {
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
     .academic-studies .card strong,
     .academic-studies .card p {
         background-color: rgba(255, 255, 255, 0.7);
         text-align: center;
         border-radius: 0 14px 14px 0;
         padding: 3.5%;
+    }
+
+    .academic-studies .card p {
+        text-align: justify;
     }
 
     .academic-studies .card a {
@@ -222,20 +241,6 @@ main p {
     .academic-studies .card:hover a {
         color: inherit;
         transition: none;
-    }
-
-    .academic-studies > div:not(.container) {
-        margin: 3%;
-    }
-
-    .academic-studies > div:not(.container) h2 {
-        line-height: 1.5;
-        text-align: center;
-    }
-
-    .academic-studies > div:not(.container) span {
-        margin-bottom: 5%;
-        text-align: center;
     }
 
     /* Second Section */
