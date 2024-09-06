@@ -60,8 +60,9 @@ main p {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.academic-studies .card span {
+.academic-studies .card strong {
     font-size: clamp(20px, 1.979vw, 24px);
+    display: block;
 }
 
 .academic-studies .card p {
@@ -172,7 +173,55 @@ main p {
     }
 
     .academic-studies .card {
-        border-radius: 0;
+        border-radius: 0 14px 14px 0;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .academic-studies .card:nth-child(1) {
+        background-image: url('../resources/images/initiatives-images/urban-resilience-background.jpg');
+    }
+
+    .academic-studies .card:nth-child(2) {
+        background-image: url('../resources/images/initiatives-images/affordable-housing-background.jpg');
+    }
+
+    .academic-studies .card:nth-child(3) {
+        background-image: url('../resources/images/initiatives-images/sustainable-transportation-background.jpg');
+    }
+
+    .academic-studies .card:nth-child(4) {
+        background-image: url('../resources/images/initiatives-images/urban-green-infrastructure-background.jpg');
+    }
+
+    .academic-studies .card:nth-child(5) {
+        background-image: url('../resources/images/initiatives-images/development-and-housing-framework-background.jpg');
+    }
+
+    .academic-studies .card:nth-child(6) {
+        background-image: url('../resources/images/initiatives-images/climate-change-action-background.jpg');
+    }
+
+    .academic-studies .card strong,
+    .academic-studies .card p {
+        background-color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        border-radius: 0 14px 14px 0;
+        padding: 3.5%;
+    }
+
+    .academic-studies .card a {
+        background-color: rgba(255, 255, 255, 0.65);
+        text-align: center;
+        border-radius: 5px;
+        padding: 1%;
+        color: black;
+    }
+
+    .academic-studies .card:hover,
+    .academic-studies .card:hover a {
+        color: inherit;
+        transition: none;
     }
 
     .academic-studies > div:not(.container) {
@@ -186,11 +235,26 @@ main p {
 
     .academic-studies > div:not(.container) span {
         margin-bottom: 5%;
-        text-align: justify;
+        text-align: center;
     }
 
-    .second-section > div {
-        border-radius: 3.33px;
+    /* Second Section */
+    .second-section {
+        background-image: url('../resources/images/initiatives-images/brown-cardboard-texture.jpg');
+        background-position: center;
+        background-size: contain;
+    }
+
+    /* Urban Planning Strategies */
+    .urban-planning-strategies .card {
+        padding: 4%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .urban-planning-strategies .card,
+    .urban-planning-strategies .card img {
+        border: none;
+        background-color: var(--main-bg-color);
     }
 
     .urban-planning-strategies h2 {
@@ -206,15 +270,20 @@ main p {
         text-align: center;
     }
 
+    /* Case Studies */
     .case-studies h2 {
         margin: 13% 0 6% 0;
         text-align: center;
     }
 
-    .case-studies .card span {
-        margin: 5% 00;
+    .case-studies .card {
+        position: relative;
+        background-color: var(--main-bg-color);
+        border-radius: 14px;
+        padding: 4%;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
     }
-
+    
     .case-studies .card img {
         border-radius: 14px;
     }
