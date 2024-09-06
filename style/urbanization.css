@@ -223,7 +223,7 @@ main section {
 
 .urbanization-graph h2 {
     font-size: 2rem; 
-    color: var(--main-bg-color);
+    color: var(--main-accent-color);
     margin-bottom: 1rem;
 }
 
@@ -263,11 +263,9 @@ main section {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
 
-    
-
     .urbanization-graph h2 {
         font-size: 1.5rem; 
-        color: var(--main-bg-color);
+        color: var(--main-accent-color);
         margin-bottom: 0.75rem;
     }
 
@@ -275,7 +273,7 @@ main section {
         order: 3; 
         max-width: 100%;
         padding: 1rem;
-        text-align: justify;
+        text-align: center;
         font-size: 0.9rem;
         line-height: 1.6;
 
@@ -328,7 +326,7 @@ main section {
 
 .backlog-item h3 {
     font-size: 1.2rem; 
-    color: var(--main-bg-color);
+    color: var(--main-accent-color);
     font-weight: 700;
     margin-bottom: 0.2rem;
     margin-top: 0.2rem;
@@ -421,7 +419,7 @@ main section {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
-    color: var(--main-bg-color);
+    color: var(--main-accent-color);
     margin: 0;
     margin-bottom: 1rem;
 }
@@ -519,7 +517,7 @@ main section {
 }
 
 .heading-container h2 {
-    color: var(--main-foreground-color);
+    color: var(--main-bg-color);
     font-family: 'Poppins', sans-serif; 
     font-weight: 600; 
     margin: 0;
@@ -558,7 +556,7 @@ main section {
 }
 
 .number-item p {
-    color: var(--main-bg-color);
+    color: var(--main-accent-color);
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0.5rem 0;
