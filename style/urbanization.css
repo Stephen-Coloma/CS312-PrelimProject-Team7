@@ -445,15 +445,27 @@ main section {
     border-radius: 0.5rem;
 }
 
+.mobile-images {
+    display: none;
+}
+
 /* Media Query */
 @media (max-width: 767px) { 
+    
     .disaster-images, .issues-images {
-        flex-direction: column; 
-        gap: 1rem; 
+        display: none;
     }
 
-    .disaster-images img, .issues-images img {
-        width: 100%; 
+    .mobile-images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+
+    }
+
+    .mobile-images img {
+        width: 100%;
     }
 
     .disaster-header, .issue-header {
@@ -464,24 +476,19 @@ main section {
     .disaster-header h2, .issue-header h2 {
         font-size: 1.6rem; 
         margin-bottom: 0.5rem;
+        font-family: var(--app-font-family);
     }
 
     .disaster-header p, .issue-header p {
         font-size: 0.9rem; 
         text-align: justify;
+        font-family: var(--app-font-family);
+        margin: 0%;
     }
 }
 
 /* Media Query for Tablet & Desktop */
 @media (min-width: 768px) {
-    .disaster-images, .issues-images {
-        flex-direction: row; 
-        justify-content: space-between;
-    }
-
-    .disaster-images img, .issues-images img {
-        width: 32%;
-    }
 
     .disaster-header, .issue-header {
         flex-direction: row;
