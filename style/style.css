@@ -48,6 +48,7 @@
     /* font family to be changed */
     --app-font-family: 'Poppins'; 
     --app-font-size: .9rem;
+    --app-line-height: 1.6;
     /* mobile view breakpoint */
     --mobile-breakpoint: 420px;
     --tab-breakpoint: 768px;
