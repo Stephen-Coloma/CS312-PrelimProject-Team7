@@ -191,6 +191,10 @@ main p{
 
 /* SECTION: GLOBAL STATISTICS, ASSIGNED TO: LEONGHARD */
 
+*{
+    scroll-behavior: smooth !important;
+}
+
 .global-statistics {
     width: 100%;
 }
