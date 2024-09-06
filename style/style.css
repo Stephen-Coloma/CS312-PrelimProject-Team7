@@ -20,6 +20,25 @@
         url('../resources/fonts/poppins-light-webfont.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Kalam';
+    font-weight: 400;
+    src: url('../resources/fonts/Kalam-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Kalam';
+    font-weight: bold;
+    src: url('../resources/fonts/Kalam-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Kalam';
+    font-weight: 100;
+    src: url('../resources/fonts/Kalam-Light.ttf');
+}
+
+
 :root{
     --main-bg-color: #fff;
     --main-foreground-color: #fd9d24;
@@ -32,6 +51,15 @@
     /* mobile view breakpoint */
     --mobile-breakpoint: 420px;
     --tab-breakpoint: 768px;
+}
+
+
+  /* CHANGING THE FONTS ON MOBILE VIEW */
+  @media(max-width: 420px){
+    :root{
+        --app-font-family: 'Kalam'; 
+        line-height: 1;
+    }
   }
 
 * {
@@ -257,4 +285,3 @@ footer .white{
     align-items: center;
     font-size: clamp(.1rem, .2rem + 1vw, .4rem);
 }
-

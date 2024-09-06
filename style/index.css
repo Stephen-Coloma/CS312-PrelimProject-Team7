@@ -271,7 +271,7 @@ main p{
     font-family: var(--app-font-family);
     font-size: clamp(1rem, 10vw, 2rem);
     color: var(--main-accent-color);
-    height: 15vh;
+    height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
