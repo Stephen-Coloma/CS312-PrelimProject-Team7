@@ -21,21 +21,21 @@
 }
 
 @font-face {
-    font-family: 'Kalam';
+    font-family: 'Signika';
     font-weight: 400;
-    src: url('../resources/fonts/Kalam-Regular.ttf');
+    src: url('../resources/fonts/Signika-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Kalam';
+    font-family: 'Signika';
     font-weight: bold;
-    src: url('../resources/fonts/Kalam-Bold.ttf');
+    src: url('../resources/fonts/Signika-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Kalam';
+    font-family: 'Signika';
     font-weight: 100;
-    src: url('../resources/fonts/Kalam-Light.ttf');
+    src: url('../resources/fonts/Signika-Light.ttf');
 }
 
 
@@ -58,7 +58,7 @@
   /* CHANGING THE FONTS ON MOBILE VIEW */
   @media(max-width: 420px){
     :root{
-        --app-font-family: 'Kalam'; 
+        --app-font-family: 'Signika'; 
         line-height: 1;
     }
   }
