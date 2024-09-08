@@ -8,7 +8,6 @@ main p{
 .home-page{
     /* border: blue 2px solid; */
     width: 100%;
-    height: 90vh;
     padding: 5% 2%;
     position: relative;
     display: flex;
@@ -20,6 +19,7 @@ main p{
 }
 
 .content-wrapper{
+    height: 76vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,23 +120,6 @@ main p{
     border-radius: 1rem;
 }
 
-
-/* Test lng */
-.content-wrapper {
-    margin: 5% 0 5% 0;
-}
-
-.global-statistics {
-    margin: 4% 0 4% 0;
-    /* border: 0 8px 0 8px solid var(--main-foreground-color); */
-    border-top: 4px solid var(--main-accent-color);
-    border-bottom: 4px solid var(--main-accent-color);
-
-    /* border-radius: 14px; */
-    padding: 1.5%;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
-}
-
 @media(min-width: 420px){
     .home-page{
         background-image: none;
@@ -213,157 +196,98 @@ main p{
 }
 
 .global-statistics {
-    width: 100%;
+    margin: 4% 0;
+    padding: 1.5% 0;
+    border-top: 4px solid var(--main-accent-color);
+    border-bottom: 4px solid var(--main-accent-color);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .global-statistics h2 {
     color: var(--main-accent-color);
     text-align: center;
-    padding: 2% 0 3% 0;
+    padding: 3%;
     font-family: var(--app-font-family);
-    font-size: 2rem;
+    font-size: clamp(28px, 1.979vw, 34px);
+}
+
+.global-statistics p {
+    margin: 3% 2%;
+    padding: 0 10%;
+    text-align: center;
+    line-height: 1.5;
+    font-family: var(--app-font-family);
+    font-size: clamp(14px, 1.979vw, 16px);
+}
+
+.global-statistics strong {
+    font-size: clamp(20px, 1.979vw, 28px);
+    font-family: var(--app-font-family);
+    display: block;
+    text-align: right;
 }
 
 .stats-container {
-    background-color: var(--main-bg-color);
-    padding: 2% 2%;
+    background-color: var(--card-bg-color);
+    padding: 2% 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 5%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.stats-container .stats-card-container {
-    width: 100%;
-    margin-bottom: 1rem;
+.stats-container .card > strong {
+    font-size: clamp(30px, 1.979vw, 50px);
 }
 
-.stats-container > div > div {
-    background-color: var(--main-foreground-color);   
+.stats-container .card > div {
     display: flex;
-    justify-content: left;
-    padding-left: 3rem;
-    gap: 1rem;
+    gap: 5%;
     align-items: center;
+    justify-content: right;
 }
 
-.stats-container h2 {
-    color: var(--main-accent-color);
-    text-align: left;
-    font-family: var(--app-font-family);
-    font-size: 1.5rem;
-    line-height: 0;
-    color: var(--main-bg-color);
-    width: 50%;
-    height: 60px;
-
+.stats-container .card > div > picture > img{
+    width: clamp(50px, 1.979vw, 100px);
 }
 
-.stats-container .image-holder {
-    height: 3rem;
-    width: 3rem;
-    background-size:contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.stats-container #population-img{
-    background-image: url('../resources/images/population-mobile.svg');
-}
-
-.stats-container #birth-img {
-    background-image: url('../resources/images/birth-mobile.svg');
-}
-
-.stats-container #death-img {
-    background-image: url('../resources/images/death-mobile.svg');
-}
-
-
-
-.stats-container > div > span {
-    text-align: right;
-    font-family: var(--app-font-family);
-    font-size: clamp(1rem, 10vw, 2rem);
-    color: var(--main-accent-color);
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--main-foreground-color);
-}
-
-
-.global-statistics .text-container {
-    /* border: red 2px solid; */
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 1rem;
-}
-
-.global-statistics #population-discussion {
-    /* border: red 2px solid; */
-    margin-left: 0;
-    margin-right: 0;
-    text-align: justify;
-    line-height: 1.4;
-    text-indent: 2rem;
-}
-
-@media(min-width: 420px){
-/* IMAGES */
-    .stats-container #population-img {
-        background-image: url('../resources/images/population-img.svg');
-    }
-
-    .stats-container #birth-img {
-        background-image: url('../resources/images/birth-img.svg');
-    }
-
-    .stats-container #death-img {
-        background-image: url('../resources/images/death-img.svg');
-    }
-
-    .global-statistics #population-discussion {
-        max-width: 70%;
-        text-align: center;
-        text-indent: 0;
-    }
-
-    .stats-container{
-        max-width: 100%;
-        background-color: var(--card-bg-color);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .stats-container > div > div{
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    .stats-container .stats-card-container{
-        width: auto;
-        margin-bottom: 0;
-    }
-    .stats-container h2{
-        color: var(--main-accent-color);
-        width: auto;
-    }
-
-    .stats-container > div > span{
-        height: auto;
-        color: black;
-        font-size: clamp(1rem, 10vw, 1.5rem);
+@media (max-width: 768px) {
+    .global-statistics, .stats-container {
         border: none;
+        box-shadow: none;
     }
-}
 
-@media(min-width: 768px){
-    .stats-container > div > span {
-        font-size: 2.5rem;
+    .global-statistics p {
+        text-align: justify;
+    }
+
+    .global-statistics strong {
+        color: var(--main-bg-color);
+    }
+
+    .stats-container {
+        background-color: var(--main-bg-color);
+        padding: 3% 15%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .stats-container .card {
+        border: 2px solid var(--main-foreground-color);
+        border-radius: 14px 14px 0 0;
+    }
+
+    .stats-container .card > strong {
+        color: var(--main-accent-color);
+        text-align: center;
+        padding: 2% 0;
+    }
+
+    .stats-container .card > div {
+        padding: 2% 0;
+        justify-content: center;
+        background-color: var(--main-foreground-color);
+        border-radius: 10px 10px 0 0;
     }
 }
 
