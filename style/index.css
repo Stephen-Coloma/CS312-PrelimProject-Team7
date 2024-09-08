@@ -189,6 +189,12 @@ main p{
     }
 }
 
+@media(max-width: 420px) {
+    .content-wrapper{
+        margin-top: 15%;
+    }
+}
+
 /* SECTION: GLOBAL STATISTICS, ASSIGNED TO: LEONHARD */
 
 *{
@@ -218,11 +224,12 @@ main p{
     line-height: 1.5;
     font-family: var(--app-font-family);
     font-size: clamp(14px, 1.979vw, 16px);
+    overflow-wrap: break-word;
 }
 
 .global-statistics strong {
-    font-size: clamp(20px, 1.979vw, 28px);
     font-family: var(--app-font-family);
+    font-size: clamp(20px, 1.979vw, 28px);
     display: block;
     text-align: right;
 }
@@ -237,7 +244,9 @@ main p{
 }
 
 .stats-container .card > strong {
+    font-family: var(--app-font-family);
     font-size: clamp(30px, 1.979vw, 50px);
+    overflow-wrap: break-word;
 }
 
 .stats-container .card > div {
